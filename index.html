@@ -12,7 +12,7 @@
   <style>
 
    .navbar-brand{
-        color: rgb(226, 120, 50);
+        color: #cf5b27;
         font-weight: bold;
         font-size: 40px;
         padding-bottom: 0px;
@@ -23,7 +23,7 @@
    .nav-item a:hover{ color: rgb(226, 120, 50);}
 
    .hero-title{
-      color:rgb(226, 120, 50); 
+      color:#f16233; 
       text-align: center;
       padding: 40px;
       
@@ -39,16 +39,16 @@
   
   .member{padding-inline: 30px; }
   .items{ color: aliceblue;}
-  .numbers{ color: rgb(249, 105, 9); font-family: "Imperial Script", cursive; font-size: 50px;}
+  .numbers{ color:#d35427; font-family: "Imperial Script", cursive; font-size: 60px; font-weight: 550;}
 
   .imperial-script-regular {
   font-family: "Imperial Script", cursive;
   font-weight: 400;
   font-style: normal;
   }
-  .Company{ background-color: rgb(10, 11, 31);}
-  .Footer{ background-color: rgb(13, 7, 36);}
-  .Footer a{text-decoration: none;color: rgb(163, 158, 160);}
+  .Company{ background-color: #0a2433;}
+  .Footer{ background-color: #0a2433;}
+  .Footer a{text-decoration: none;color:#7f898d ;}
   .card{min-height: 100%; }
   .card-text{ font-family: ;color: rgb(62, 57, 57); font-weight: bold;font-size: 18px;}
 
@@ -77,10 +77,10 @@
              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav  mb-2 mb-lg-0 ">
                   <li class="nav-item">
-                       <a class="nav-link " aria-current="page" href="#">HOME</a>
+                       <a class="nav-link "  href="index.html">HOME</a>
                  </li>
                  <li class="nav-item">
-                     <a class="nav-link" href="#">ABOUT</a>
+                     <a class="nav-link" href="about.html">ABOUT</a>
                  </li>
                  <li class="nav-item">
                      <a class="nav-link" href="#">SERVICES</a>
@@ -264,13 +264,13 @@
     </section>
 
     <section class="container">
-      <form action="" class="text-center">  
+      <form action="" class="text-center" name="myForm" onsubmit="validateForm()">  
         <div class="row justify-content-center my-5">
             <div class="col-lg-6"> 
 
                   <div class="row">
                        <div class="col">
-                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="first-name">
                        </div>
                        <div class="col">
                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
@@ -280,7 +280,7 @@
 
                   <div class="row">
                        <div class="col">
-                           <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail">
+                           <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" id="email">
                        </div>
                   </div>
                   <br>
@@ -305,7 +305,7 @@
                  <br>
 
                  <div class="">
-                      <input type="checkbox" class="btn-check " id="btn-check" autocomplete="off">
+                      <input type="submit" class="btn-check " id="btn-check" autocomplete="off">
                       <label class="btn btn-primary" for="btn-check">Sign In</label>
                 </div>
      
@@ -317,7 +317,8 @@
     
 
  <!-- Footer -->
-     <section class="container-fliuid text-center Footer">
+
+     <section class="container-fluid text-center Footer">
        <div class="row">
 
              <div class="col-sm"> 
@@ -360,13 +361,13 @@
 
                  <div class="row">
                      <div class="col-2" style="text-align: right; vertical-align:middle ;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d35427" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
                                 </svg>
                      </div>
-                     <div class="col-9" style="text-align: left;color: aliceblue;">
-                           <h7 style="font-size: 15px;" >+94 112 875 965</h7> 
-                          <p style="font-size: 15px;"> +94 112 879 578</p>
+                     <div class="col-9" style="text-align: left;color: #7f898d;">
+                           <h7 style="font-size: 15px; font-weight: 600;" >+94 112 875 965</h7> 
+                          <p style="font-size: 15px;font-weight: 600;"> +94 112 879 578</p>
                     </div>
                     <div class="col-1"></div>
                    
@@ -374,15 +375,15 @@
 
                  <div class="row">
                      <div class="col-2" style="text-align:right ; vertical-align:middle ;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d35427" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
                                </svg>
                      </div>
-                     <div class="col-9" style="text-align: left;color: aliceblue;">
-                      <h6 style="font-weight: 400; font-size: 15px;">No.056</h6>
-                      <h6 style="font-weight: 400;font-size: 15px;">Havlock Town</h6>
-                      <h6 style="font-weight: 400;font-size: 15px;">Colombo 05</h6>  
-                      <h6 style="font-weight: 400;font-size: 15px;">Sri Lanka</h6>  
+                     <div class="col-9" style="text-align: left;color: #7f898d;">
+                      <h6 style="font-weight: 600; font-size: 15px;">No.056</h6>
+                      <h6 style="font-weight: 600;font-size: 15px;">Havlock Town</h6>
+                      <h6 style="font-weight: 600;font-size: 15px;">Colombo 05</h6>  
+                      <h6 style="font-weight: 600;font-size: 15px;">Sri Lanka</h6>  
                     </div> 
                      <div class="col-1"></div>
 
@@ -395,7 +396,9 @@
        </div>
      </section>
 
+
   <!-- Copyright -->
+
     <section class="container-fluid text-center" style="background-color: black;color: aliceblue;">
       <br>
       <h6>Copyright  
@@ -405,6 +408,42 @@
           2020 - SLIIT WEB DEVELOPMENT - All rights reserved</h6>
       <br>
     </section>
+
+    <!-- Form Validation -->
+         
+             <script>
+                  function validateForm(){ 
+
+                     var name = document.myForm.name.value
+                     var name = document.myForm.email.value
+                     console.log(name,password)
+
+                     if (first-name == null || first-name ="") {
+                        alert ( "Name can't be empty");
+                        return false
+                     }
+
+                      else if (email == null || email ="" ||) {
+                        alert ( "Email can't be empty");
+                        return false
+                     }
+
+                      else {
+                        alert ( "Signed In Successfully");
+                        return true
+                     }
+                     
+        
+
+
+
+
+
+
+                  }
+             </script>
+
+             
 
 
 
