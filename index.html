@@ -25,7 +25,7 @@
    .hero-title{
       color:rgb(226, 120, 50); 
       text-align: center;
-      padding: 40px;
+      padding: 30px;
     }
     .img-fluid {
     width: 100%;
@@ -48,6 +48,8 @@
   .Company{ background-color: rgb(10, 11, 31);}
   .Footer{ background-color: rgb(13, 7, 36);}
   .Footer a{text-decoration: none;color: rgb(163, 158, 160);}
+  .card{min-height: 100%; }
+  .card-text{ font-family: ;color: rgb(62, 57, 57); font-weight: bold;}
 
  
 
@@ -216,15 +218,18 @@
           <div class="container row">
 
             <div class="col-md"> 
+             
                 <div class="card border-primary mb-3 text-center" >
                 <div class="card-body text-primary">
                 <h3 class="card-title">Hotel Eucalyptus</h3>
                 <h6 class="card-subtitle" style="color: rgb(102, 97, 97);">in Greece</h6> <br>
-                <p class="card-text"> "We booked Hotel Eucalyptus through Jay after reading a handful of reviews, and it was easily the best decision we made ... more"</p>
+                 <p class="card-text"> "We booked Hotel Eucalyptus through Jay after reading a handful of reviews, and it was easily the best decision we made ... more"</p>
                 <h6 class="card-subtitle" style="color: rgb(102, 97, 97);">- Joyce from Canada</h6>
                 </div>
                 </div>
               </div>
+             
+              
 
             <div class="col-md"> 
                 <div class="card border-primary mb-3 text-center" >
@@ -254,11 +259,44 @@
   <!-- Contact Us -->
     
     <section class="container-fluid hero-title">
-             <h1 >CONTACT US </h1>
+             <h1>CONTACT US </h1>
     </section>
 
+    <section class="container">
+      <form action="">  
+      <div class="row justify-content-center my-5">
+          <div class="col-lg-6"> 
+            <div class="row">
+              <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+             </div>
+            <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+          </div>
+          <br>
+           <div class="row">
+              <div class="col">
+                  <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail">
+             </div>
+            </div>
+            <br>
+             <div class="row">
+              <div class="col">
+                  <input type="number" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
+             </div>
+           </div> 
+           <br>
+      </div> 
+     </div> 
+    </form>   
+
+
+
+
+     </section>
     
-    </section>
+    
 
  <!-- Footer -->
      <section class="container-fluid text-center Footer">
