@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Us</title>
+    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <style>
-    .navbar-brand{
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  </head>
+
+  <style>
+  .navbar-brand{
         color: #cf5b27;
         font-weight: bold;
         font-size: 40px;
@@ -17,52 +21,52 @@
    .nav-item a{ color: rgb(255, 255, 255);}
    .nav-item a:hover{ color: rgb(226, 120, 50);}
 
-   .hero-video-container {
+   .hero-title{
+      color:#f16233; 
+      text-align: center;
+      padding: 40px;
+   }
+
+   .hero-video-wrapper {
       position: relative;
-      height: 100vh;
+      width: 100%;
+      height: 100vh; /* You can adjust this to another height if needed */
       overflow: hidden;
     }
 
-    .hero-video-container video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: 0;
-      transform: translate(-50%, -50%);
-      object-fit: cover;
-    }
-
-    .hero-overlay {
+    .hero-video-wrapper video {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay */
-      z-index: 1;
+      height: 90%;
+      object-fit: cover; /* Ensures full width and height without distortion */
+      z-index: 0;
     }
 
     .hero-content {
       position: relative;
-      z-index: 2;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding-top: 20%;
     }
 
- 
+   
 
+    .hero-title{
+      color:#f16233; 
+      text-align: center;
+      
+     
+    }
+    .description{color: rgb(0, 0, 0);font-weight: 600; font-size: 18px;}
+     .Footer{ background-color: #0a2433;}
+     .Footer a{text-decoration: none;color:#7f898d ;}
 
+    </style>
 
-   </style>
-
-
-</head>
   <body>
-       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-
      <header>
       <nav>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -76,9 +80,10 @@
            </button>
              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav  mb-2 mb-lg-0 ">
-                  <li class="nav-item">
-                       <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+                 <li class="nav-item">
+                     <a class="nav-link" href="index.html">HOME</a>
                  </li>
+
                  <li class="nav-item">
                      <a class="nav-link" href="about.html">ABOUT</a>
                  </li>
@@ -95,73 +100,172 @@
                      <a class="nav-link" href="#">CONTACTS</a>
                  </li>
     
-           </ul>
+      </ul>
      
-         </div>
-         </div>
-       </nav>
+    </div>
+  </div>
+</nav>
       </nav>
 
 
-     </header>
+    </header>
 
 
-   
-<section class="hero-video-container d-flex align-items-center justify-content-center text-white text-center">
-  <!-- Video Background -->
+    <section class="hero-video-wrapper">
+  <!-- Background Video -->
   <video autoplay muted loop playsinline>
-    <source src="Untitled design.mp4">
-    
+    <source src="Jay Tours video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
   </video>
 
-  <!-- Overlay -->
-  <div class="hero-overlay"></div>
+ 
 
   <!-- Content -->
    
-  <div class="hero-content container">
-    <h1 class="display-3 fw-bold">JAY TOURS</h1>
-    <p class="lead">
-      Welcome to JAY TOURS, your trusted travel partner for unforgettable Sri Lankan getaways and exciting international adventures.
-     </p>
-
-    <p>Based in the heart of Sri Lanka, we are a passionate team of travel professionals dedicated to helping you explore the world — starting from our own island paradise. Whether you dream of soaking up the sun on the beaches of Mirissa, hiking through the misty hills of Ella, or discovering the magic of Europe, Asia, or the Middle East — we’ve got you covered. 
-
-    </p>
-
-     <p>We specialize in both local tour packages across Sri Lanka and customized international holidays to some of the world’s most popular destinations. From family vacations and romantic honeymoons to corporate trips and group tours, every journey is planned with care, comfort, and personalized attention.
-    </p>
-    <p>With years of experience, trusted global partners, and a love for travel, we ensure that every trip is stress-free, well-organized, and filled with amazing memories. At [Your Travel Agency Name], we don’t just sell tours — we create experiences that last a lifetime.
-     </p>
-     <p>🌍 Travel local. Explore global. Experience more — with us.
-    </p>
-
-
-</p>
-    <a href="#explore" class="btn btn-primary btn-lg mt-3">EXPLORE OUR SERVICES</a>
+   <div class="hero-content container">
+     <h1 class="display-3 fw-bold">Discover the World</h1>
+    <p class="lead">Travel with us — locally and globally</p>
+    <a href="#tours" class="btn text-bg-warning p-3 btn-lg mt-3">EXPLORE OUR PACKAGES</a>
   </div>
+ </section>
+
+  <!-- About Us -->
+
+     <section class="container-fluid hero-title">
+          <h1 >ABOUT US </h1>
+          <p class="description">Welcome to JAY YOURS, your trusted travel partner for unforgettable Sri Lankan getaways and exciting international adventures.
+          </p>
+           <p class="description">Based in the heart of Sri Lanka, we are a passionate team of travel professionals dedicated to helping you explore the world — starting from our own island paradise. Whether you dream of soaking up the sun on the beaches of Mirissa, hiking through the misty hills of Ella, or discovering the magic of Europe, Asia, or the Middle East — we’ve got you covered.
+          </p>
+          <p class="description">We specialize in both local tour packages across Sri Lanka and customized international holidays to some of the world’s most popular destinations. From family vacations and romantic honeymoons to corporate trips and group tours, every journey is planned with care, comfort, and personalized attention.
+          </p>
+        <p class="description">With years of experience, trusted global partners, and a love for travel, we ensure that every trip is stress-free, well-organized, and filled with amazing memories. At JAY TOURS, we don’t just sell tours — we create experiences that last a lifetime.
+        </p>
+<p class="description">🌍 Travel local. Explore global. Experience more — with us.</p>
+      </p>
 </section>
-      
-    
 
+<!-- Awards & Recognition -->
 
-      
-    
+ <section class="container-fluid hero-title">
+          <h1 >AWRDS & RECOGNITION </h1>
+          
+  </section>
+
+   <section class="hero-image">
+      <img src="Blue Vibrant an White Modern Professional Website Development Services Banner.png" class="img-fluid" alt="...">
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+
+     <!-- Footer -->
+
+     <section class="container-fluid text-center Footer">
+       <div class="row">
+
+             <div class="col-sm"> 
+                <br>
+                <a href=""><h5>HELP</h5></a>
+                <br>
+                <a href=""><h6 >Help Center</h6> </a>
+                <a href=""><h6 >FAQs</h6></a>
+                <a href=""><h6 >Terms of Use</h6></a>
+                <br>
+             </div>
+
+             <div class="col-sm"> 
+                <br>
+                <a href=""><h5>ABOUT US </h5></a>
+                <br>
+                <a href=""><h6 >Blog</h6> </a>
+                <a href=""><h6 >Careers</h6></a>
+                <br>
+             </div>
+
+             <div class="col-sm">
+                <br>
+                <a href=""><h5>DESTINATIONS</h5></a>
+                <br>
+                <a href=""><h6 >Countries</h6> </a>
+                <a href=""><h6 >Cities</h6></a>
+                <br>
+             </div>
+             <div class="col-sm"> 
+                <br>
+                <a href=""><h5>PARTNER WITH US</h5></a>
+                <br>
+                <a href=""><h6 >Properties</h6> </a>
+                <a href=""><h6 >Affliliates</h6></a>
+                <br>
+              </div>
+             <div class="col-lg"> 
+                <br>
+
+                 <div class="row">
+                     <div class="col-2" style="text-align: right; vertical-align:middle ;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d35427" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                                </svg>
+                     </div>
+                     <div class="col-9" style="text-align: left;color: #7f898d;">
+                           <h7 style="font-size: 15px; font-weight: 600;" >+94 112 875 965</h7> 
+                          <p style="font-size: 15px;font-weight: 600;"> +94 112 879 578</p>
+                    </div>
+                    <div class="col-1"></div>
+                   
+                </div>
+
+                 <div class="row">
+                     <div class="col-2" style="text-align:right ; vertical-align:middle ;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d35427" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                               <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                               </svg>
+                     </div>
+                     <div class="col-9" style="text-align: left;color: #7f898d;">
+                      <h6 style="font-weight: 600; font-size: 15px;">No.056</h6>
+                      <h6 style="font-weight: 600;font-size: 15px;">Havlock Town</h6>
+                      <h6 style="font-weight: 600;font-size: 15px;">Colombo 05</h6>  
+                      <h6 style="font-weight: 600;font-size: 15px;">Sri Lanka</h6>  
+                    </div> 
+                     <div class="col-1"></div>
 
           
+                
+                
+                <br>
+             </div>
+
+       </div>
+     </section>
 
 
+  <!-- Copyright -->
+
+    <section class="container-fluid text-center" style="background-color: black;color: aliceblue;">
+      <br>
+      <h6>Copyright  
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+           <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512"/>
+          </svg>
+          2020 - SLIIT WEB DEVELOPMENT - All rights reserved</h6>
+      <br>
+    </section>
 
 
+   
 
 
-
-
-
+   
   
   
   
   
   
-    </body>
+  
+  
+  
+  
+  </body>
 </html>
